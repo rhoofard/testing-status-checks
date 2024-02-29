@@ -1,0 +1,16 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Quality Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  Code-Quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo checking quality...
