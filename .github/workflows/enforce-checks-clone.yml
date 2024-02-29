@@ -1,0 +1,11 @@
+name: summary
+on:
+  pull_request:
+jobs:
+  enforce-all-checks:
+    runs-on: ubuntu-latest
+    permissions:
+      checks: read
+    steps:
+      - name: GitHub Checks
+        run: faking check run
